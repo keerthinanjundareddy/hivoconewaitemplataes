@@ -1,0 +1,342 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+    /* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Sora:wght@300;400;500&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+  body{
+    
+    font-family:  'DM Sans', sans-serif;
+  }
+  /* .pricing-item-section:hover{
+    background-color: aquamarine !important;
+  } */
+  .popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100; 
+    /* border:1px solid rgb(6, 5, 5); */
+    background-color:white;
+    border-radius: 10px;
+    /* padding:100px; */
+    /* Ensure the popup is above other content */
+    /* Additional styling properties */
+  }
+  .span-border-class{
+   
+    padding-left:20px;
+    border-top: 1px solid red !important;
+    padding-top: 0px !important;
+    margin-bottom: 20px !important;
+  }
+  .backdrop-blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    z-index: 1; /* Ensure the backdrop is behind the popup */
+  }
+  .popup-content-text{
+    padding-top:10px ;
+  
+    padding-left:80px;
+    padding-right:80px ;
+  }
+  .popup-title{
+    padding-top:10px ;
+   padding-bottom:50px ;
+    padding-left:80px;
+    padding-right:80px ;
+  }
+  
+  
+  .close-section-popup{
+    cursor:pointer;
+  }
+  
+  .items-title-div{
+    /* font-weight: 400; */
+    font-size: 18px;
+    color:#000015;
+  }
+  .items-title-description{
+    color:#78828C;
+  }
+  .item-dec-div{
+    font-weight: 300;
+    font-size: 15px;
+  
+  }
+  .pricing-full-page-container{
+    margin-left: 2%;
+    margin-right: 2%;
+    /* padding-left: 3%; */
+    /* padding-right:3%; */
+    /* background-color: grey; */
+    padding-top:60px;
+    /* padding-left: 50px; */
+    /* padding-right: 50px; */
+    /* border:1px solid blue; */
+    /* background-color: red; */
+    border-radius: 5px;
+   
+  
+  }
+  .pricing-flexbox-container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: auto;
+    flex-wrap: wrap;
+    /* gap:20px; */
+    
+    /* we can give anyting here based on mocks */
+    /* justify-content: space-around; */
+    margin-top:25px ;
+    margin-bottom:25px ;
+    justify-content: space-between;
+    border:1px solid #F3F4F9;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #F3F4F9;
+    border-radius: 15px;
+    
+  
+  }
+  .pricing-item-section{
+    flex-basis:31.33% !important;
+        border: 1px solid grey;
+        border-radius: 15px ;
+        margin:30px 1px;
+        /* box-shadow: 0px 0px 2px 3px lightgrey; */
+      text-align:left;
+      background-color: white;
+    
+      padding: 30px;
+  
+  
+  
+  }
+  
+  .pricing-item-section:focus {
+    outline: none;
+  }
+  
+  .navbar-section{
+    width:100%;
+    height:70px;
+    position:fixed  !important;
+    /* padding-left:30px ; */
+    background-color:#FFFFFF !important;
+    /* text-align: center; */
+    z-index: 100;
+    box-shadow: 1px 1px 1px rgb(190, 190, 190) !important;
+    /* border-bottom: 1px solid grey; */
+
+   
+  }
+  
+  .navbar-image{
+    /* width:100%; */
+    height:70px;
+    padding-top:10px;
+    padding-bottom:10px;
+    object-fit: contain;
+    margin-left:5% ;
+    /* text-align: left; */
+  
+  }
+  .navbar-image-two{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+   text-align: left !important;
+  }
+  .parent-navbar-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .subtitle-section{
+    border:1px solid #5454D2;
+    border-radius: 5px;
+    color:#5454D2;
+    background-color:#E5E9FF; 
+    /* text-align: right; */
+    margin-right: 5%;
+    white-space: nowrap ;
+    padding: 7px;
+    /* width:100%; */
+   
+  }
+  .attribute-section-backgrround{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor:pointer;
+  }
+  .how-it-works-section{
+    cursor:pointer;
+    color:#82868F;
+  }
+  .pricing-item-section {
+    /* Your default styles here */
+    transition: background-image 0.5s, background-size 0.5s, background-position 0.5s; /* Increase the transition duration for a slower effect */
+    background-position: calc(50% + 10px) center; /* Start with the image positioned slightly to the right and centered vertically */
+    background-size: 100% 100%; /* Initial background size */
+  }
+  
+  .pricing-item-section:hover {
+    background-color: #5956E9 !important; /* Change background color on hover */
+    background-image: url('../Assets/Rectangle.png'); /* Relative path to your image */
+    background-size: 50% auto; /* Set the image size to 50% width and auto height */
+    background-repeat: no-repeat; /* Adjust as needed */
+    background-position: center center;
+    
+    /* Add a slight animation effect to move the image down */
+    transition: background-image 0.3s, background-size 0.5s, background-position 0.5s; /* Increase the transition duration for a slower effect */
+    transform: translateY(5px); /* Move the image down by 5 pixels */
+    background-position: calc(50% + 30px) center; /* Move the image down by 20 pixels */
+  }
+  .how-it-works-section-two {
+    cursor: pointer;
+    /* color: #82868F; */
+    background-image: url('../Assets/Vecto1.png'); /* Set the default image path */
+    background-size: 25px 3px; /* Set the default image size */
+    background-repeat: no-repeat;
+    background-position: left center; /* Position the image on the right-center */
+    padding-left: 35px;
+    margin-top: 20px !important; /* Add some padding to create space for the image */
+    /* transition: background-image 0.3s, background-size 0.5s, background-position 0.5s; */
+  }
+  
+  /* Adjust the background image when hovering */
+  .pricing-item-section:hover .how-it-works-section-two {
+    background-image: url('../Assets/close.png');
+    background-size: 25px 3px; /* Set the default image size */
+    background-repeat: no-repeat;
+    background-position: left center; /* Position the image on the right-center */
+    padding-left: 35px;
+    margin-top: 20px !important;   /* Set the hover image path */
+    /* background-size: 25px 3px; /* Set the hover image size */
+    /* background-position: right center;/ Position the hover image on the right-center */
+    /* padding-right: 35px; Keep the same padding for hover state */ 
+  }
+  .pricing-item-section:hover .items-title-div {
+    color: white !important; /* Change title color on hover */
+  }
+  
+  .pricing-item-section:hover .items-title-description{
+    color:white !important; /* Change description color on hover */
+  }
+  .pricing-item-section:hover .how-it-works-section{
+    color: white !important; /* Change title color on hover */
+  }
+  
+
+  /* end of hover effect */
+  
+  @media (max-width: 980px) {
+    .pricing-full-page-container{
+      margin-left: 20px;
+      margin-right: 20px;
+    
+    }
+    .pricing-flexbox-container{
+        display:flex;
+        flex-direction: column;
+        gap:40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-top:50px ;
+        margin-bottom:25px ;
+      }
+      .pricing-item-section {
+        margin:30px 0px;
+        width: 100%;
+        flex-basis:100% !important; /* Adjust this value as needed for width */
+     /* Adjust this value as needed for height */
+        /* Rest of your styling */
+      }
+      
+  .navbar-image{
+    /* width:100%; */
+    height:100px;
+    padding-top:10px;
+    padding-bottom:10px;
+  
+    text-align: left;
+  }
+  .navbar-image-two{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+   text-align: left !important;
+  }
+  
+  .navbar-section{
+    width:100%;
+    height:100px;
+    position:fixed  !important;
+    /* padding-left:30px ; */
+    background-color:#FFFFFF !important;
+  
+    z-index: 100;
+    
+   
+  }
+  
+     .subtitle-section{
+      margin-right: 5%;
+      }
+      .navbar-image{
+        /* width:10%; */
+        
+        margin-left:0% ;
+        /* text-align: left; */
+      
+      }
+      .popup-content-text{
+        padding-top:10px ;
+   
+        padding-left:50px !important;
+        padding-right:50px !important;
+        /* border:1px solid blue; */
+       
+      }
+      .popup-title{
+        padding-top:10px ;
+   
+        padding-left:50px !important;
+        padding-right:50px !important;
+        padding-bottom: 50px;
+      }
+      .close-section-popup{
+        cursor:none;
+      }
+      .how-it-works-section{
+        cursor:none;
+      }
+      .attribute-section-backgrround{
+         cursor:none;
+      }
+     
+    }
+    
+  
+      
+  
