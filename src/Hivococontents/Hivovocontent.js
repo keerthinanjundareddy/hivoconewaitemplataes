@@ -55,7 +55,7 @@ function Hivovocontent() {
           <div className='parent-navbar-section'>
      <div className='navbar-image'>
   
-      <img  src={`${baseUrl}${ pricingData.attributes.media?.data?.[0]?.attributes?.url}`} className='navbar-image-two'/>
+      <img  src={`${baseUrl}${ pricingData.attributes.media?.data?.[0]?.attributes?.url}`} alt="hivocologo" className='navbar-image-two'/>
       </div>
      {/* <div className='subtitle-section'>{pricingData.attributes.subtitle}</div> */}
      </div>

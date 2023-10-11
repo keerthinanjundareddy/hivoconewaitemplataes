@@ -224,7 +224,7 @@
   
   /* Adjust the background image when hovering */
   .pricing-item-section:hover .how-it-works-section-two {
-    background-image: url('../Assets/close.png');
+    /* background-image: url('../Assets/close.png'); */
     background-size: 25px 3px; /* Set the default image size */
     background-repeat: no-repeat;
     background-position: left center; /* Position the image on the right-center */
