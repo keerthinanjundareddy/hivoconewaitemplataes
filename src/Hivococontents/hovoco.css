@@ -329,7 +329,7 @@
         cursor:none;
       }
       .how-it-works-section{
-        cursor:none;
+        cursor:none !important;
       }
       .attribute-section-backgrround{
          cursor:none;
