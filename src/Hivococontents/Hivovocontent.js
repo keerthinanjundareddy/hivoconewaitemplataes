@@ -128,7 +128,7 @@ function Hivovocontent() {
               
             <div ></div>
             <div className="close-button" onClick={() => setShowPopup(false)}>
-           <img src={ closetwo} height="40" width="40" style={{paddingTop:"10px",paddingRight:"10px"}} className='close-section-popup'/>
+           <img src={ closetwo} height="40" width="40" style={{paddingTop:"10px",paddingRight:"10px"}} alt="close-icon" className='close-section-popup'/>
             </div>
             </div>
             <div className='popup-content-text'>{popupContent}</div>
