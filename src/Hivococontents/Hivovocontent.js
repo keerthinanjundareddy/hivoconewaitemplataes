@@ -7,6 +7,7 @@ import './hovoco.css';
 // import Up from '../Assets/Uparrow.svg'
 // import { ReactComponent as MySvgIcon } from '../Assets/Uparrow.svg';
 import close from '../Assets/close.png';
+import closetwo from '../../src/Assets/closetwo.png'
 import vector from '../../src/Assets/Vecto1.png'
 
 function Hivovocontent() {
@@ -127,7 +128,7 @@ function Hivovocontent() {
               
             <div ></div>
             <div className="close-button" onClick={() => setShowPopup(false)}>
-           <img src={close} height="30" width="30" style={{paddingTop:"10px",paddingRight:"10px"}} className='close-section-popup'/>
+           <img src={ closetwo} height="40" width="40" style={{paddingTop:"10px",paddingRight:"10px"}} className='close-section-popup'/>
             </div>
             </div>
             <div className='popup-content-text'>{popupContent}</div>
